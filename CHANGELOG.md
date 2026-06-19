@@ -1,3 +1,12 @@
+# [1.17.0](https://github.com/forcedotcom/sf-skills/compare/1.16.0...1.17.0) (2026-06-19)
+
+
+### Features
+
+* Skills cleanup: remove internal markers, fix paths, trim descriptions @W-22989405@ ([c8d3030](https://github.com/forcedotcom/sf-skills/commit/c8d3030bb4ce317fb30c9c6078a52dc4bd83241b))
+
+
+
 # [1.16.0](https://github.com/forcedotcom/sf-skills/compare/1.15.0...1.16.0) (2026-06-16)
 
 
