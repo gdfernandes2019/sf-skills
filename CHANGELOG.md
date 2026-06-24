@@ -1,3 +1,12 @@
+# [1.21.0](https://github.com/forcedotcom/sf-skills/compare/1.20.0...1.21.0) (2026-06-24)
+
+
+### Features
+
+* release 1 skill : dx-app-analytics-use @W-23151783 ([68c511b](https://github.com/forcedotcom/sf-skills/commit/68c511b7262c89ff1411b98e10c92d5821a1516c))
+
+
+
 # [1.20.0](https://github.com/forcedotcom/sf-skills/compare/1.19.0...1.20.0) (2026-06-23)
 
 
