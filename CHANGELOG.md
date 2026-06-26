@@ -1,3 +1,12 @@
+# [1.23.0](https://github.com/forcedotcom/sf-skills/compare/1.22.0...1.23.0) (2026-06-26)
+
+
+### Features
+
+* Release Skills Renaming by domain first convention @W-23187998@ ([deaa3d0](https://github.com/forcedotcom/sf-skills/commit/deaa3d0fedc08c0ade00bba45d5a96384b4bcc20))
+
+
+
 # [1.22.0](https://github.com/forcedotcom/sf-skills/compare/1.21.0...1.22.0) (2026-06-26)
 
 
