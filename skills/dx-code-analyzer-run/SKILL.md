@@ -9,11 +9,11 @@ metadata:
 
 # Running Code Analyzer Skill
 
-## ⚠️ CRITICAL: Mandatory Script Usage
+## CRITICAL: Mandatory Script Usage
 
 Every interaction with Code Analyzer results MUST go through the bundled scripts in `<skill_dir>/scripts/`. No exceptions.
 
-### ❌ WRONG — never do this:
+### WRONG — never do this:
 
 ```bash
 # WRONG: inline Python to parse results
@@ -31,7 +31,7 @@ Read tool → code-analyzer-results-*.json
 
 Also forbidden: `run_code_analyzer` and any `mcp__*` tool — Bash only.
 
-### ✅ RIGHT — always do this:
+### RIGHT — always do this:
 
 ```bash
 # Summarize scan results

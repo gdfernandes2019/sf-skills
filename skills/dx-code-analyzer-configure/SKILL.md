@@ -127,7 +127,7 @@ ls code-analyzer.yml code-analyzer.yaml 2>/dev/null
 
 The CLI auto-discovers `code-analyzer.yml` in the current directory. Since scans run from project root, the file must live there.
 
-### ⚠️ Rule Name Resolution — ALWAYS Before Writing YAML
+### Rule Name Resolution — ALWAYS Before Writing YAML
 
 When a user references rules by partial, descriptive, or approximate names (e.g., "the doc rule", "CRUD violation", "console rule", "hardcoded values"), you MUST resolve to exact rule names using the lookup in **Step 6.1** BEFORE writing any YAML. The `code-analyzer.yml` file silently ignores rule names that don't exactly match — there is no error, the override just won't apply.
 

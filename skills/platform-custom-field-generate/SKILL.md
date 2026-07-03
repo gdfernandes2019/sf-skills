@@ -135,7 +135,7 @@ The `<restricted>` boolean inside `<valueSet>` controls whether only admin-defin
 
 ---
 
-## 5. Master-Detail Relationship Rules ⭐ CRITICAL
+## 5. Master-Detail Relationship Rules CRITICAL
 
 Master-Detail fields have **strict attribute restrictions** that differ from Lookup fields. Violating these rules causes deployment failures.
 
@@ -160,7 +160,7 @@ Master-Detail fields have **strict attribute restrictions** that differ from Loo
 | `<reparentableMasterDetail>` | ✅ Optional | ❌ Not applicable |
 | `<writeRequiresMasterRead>` | ✅ Optional | ❌ Not applicable |
 
-### ❌ INCORRECT — Master-Detail with forbidden attributes:
+### INCORRECT — Master-Detail with forbidden attributes:
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -188,7 +188,7 @@ Master-Detail fields have **strict attribute restrictions** that differ from Loo
 - `Can not specify 'deleteConstraint' for a CustomField of type MasterDetail`
 - `Lookup filters are only supported on Lookup Relationship Fields`
 
-### ✅ CORRECT — Master-Detail field:
+### CORRECT — Master-Detail field:
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -206,7 +206,7 @@ Master-Detail fields have **strict attribute restrictions** that differ from Loo
 </CustomField>
 ```
 
-### ✅ CORRECT — Lookup field (with optional attributes):
+### CORRECT — Lookup field (with optional attributes):
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -240,7 +240,7 @@ Master-Detail fields have **strict attribute restrictions** that differ from Loo
 
 ---
 
-## 6. Roll-Up Summary Field Rules ⭐ CRITICAL
+## 6. Roll-Up Summary Field Rules CRITICAL
 
 Roll-up Summary fields have the **highest deployment failure rate**. Follow these rules exactly.
 
@@ -276,7 +276,7 @@ ChildObjectAPIName__c.FieldAPIName__c
 - `summaryForeignKey` = `ChildObject__c.MasterDetailFieldOnChild__c`
 - `summarizedField` = `ChildObject__c.FieldToSummarize__c`
 
-### ❌ INCORRECT — Roll-Up Summary with common errors:
+### INCORRECT — Roll-Up Summary with common errors:
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -295,7 +295,7 @@ ChildObjectAPIName__c.FieldAPIName__c
 - `Can not specify 'precision' for a CustomField of type Summary`
 - `Must specify the name in the CustomObject.CustomField format (e.g. Account.MyNewCustomField)`
 
-### ✅ CORRECT — Roll-Up Summary (SUM operation):
+### CORRECT — Roll-Up Summary (SUM operation):
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -393,7 +393,7 @@ A Formula is not a type itself. The `<formula>` tag is added to a field whose `<
 - IF formula result type = `Number`, `Currency`, or `Percent` → set `<formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>`
 - IF formula result type = `Text`, `Date`, or `DateTime` → set `<formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>`
 
-### ❌ INCORRECT — Using Formula as type:
+### INCORRECT — Using Formula as type:
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -404,7 +404,7 @@ A Formula is not a type itself. The `<formula>` tag is added to a field whose `<
 </CustomField>
 ```
 
-### ✅ CORRECT — Formula field:
+### CORRECT — Formula field:
 
 ```xml
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -460,7 +460,7 @@ Before generating CustomField XML, verify:
 - [ ] Is `<label>` in Title Case?
 - [ ] Are there no XML comments (`<!-- ... -->`) before the root `<CustomField>` element? (Comments before the root element break SDR's parser)
 
-### Master-Detail Field Checks ⭐ CRITICAL
+### Master-Detail Field Checks CRITICAL
 - [ ] Is `<required>` attribute ABSENT? (Master-Detail is always required)
 - [ ] Is `<deleteConstraint>` attribute ABSENT? (Master-Detail always cascades)
 - [ ] Is `<lookupFilter>` block ABSENT? (Only for Lookup fields)
@@ -471,7 +471,7 @@ Before generating CustomField XML, verify:
 - [ ] Is `<deleteConstraint>` set to `SetNull`, `Restrict`, or `Cascade`?
 - [ ] Is `<relationshipName>` in plural PascalCase?
 
-### Roll-Up Summary Field Checks ⭐ CRITICAL
+### Roll-Up Summary Field Checks CRITICAL
 - [ ] Is `<precision>` attribute ABSENT?
 - [ ] Is `<scale>` attribute ABSENT?
 - [ ] Is `<summaryForeignKey>` in format `ChildObject__c.MasterDetailField__c`?
