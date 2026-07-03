@@ -1,3 +1,12 @@
+# [1.28.0](https://github.com/forcedotcom/sf-skills/compare/1.27.0...1.28.0) (2026-07-03)
+
+
+### Features
+
+* Release: Standardize skill folder structure scripts/, references/, assets/ @W-23262449@ ([3a358c3](https://github.com/forcedotcom/sf-skills/commit/3a358c3b1cce0e0df8c6ba09cc7cd48bb0295341))
+
+
+
 # [1.27.0](https://github.com/forcedotcom/sf-skills/compare/1.26.0...1.27.0) (2026-06-29)
 
 
