@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/forcedotcom/sf-skills/compare/1.29.0...1.30.0) (2026-07-10)
+
+
+### Features
+
+* Release 2 new skills: platform-models-api-configure, platform-policy-rule-generate @W-23396600@ ([ae79223](https://github.com/forcedotcom/sf-skills/commit/ae792239f2e798654c77348e0ee4593d3d3110e8))
+
+
+
 # [1.29.0](https://github.com/forcedotcom/sf-skills/compare/1.28.0...1.29.0) (2026-07-03)
 
 
