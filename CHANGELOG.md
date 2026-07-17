@@ -1,3 +1,12 @@
+# [1.31.0](https://github.com/forcedotcom/sf-skills/compare/1.30.0...1.31.0) (2026-07-17)
+
+
+### Features
+
+* Release 4 new skills + 6 skill updates (weekly batch 2026-07-16) @W-23461225@ ([ae560c9](https://github.com/forcedotcom/sf-skills/commit/ae560c9719cd051d58b72b82b7965fd899df241b))
+
+
+
 # [1.30.0](https://github.com/forcedotcom/sf-skills/compare/1.29.0...1.30.0) (2026-07-10)
 
 
